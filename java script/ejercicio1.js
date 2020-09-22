@@ -104,3 +104,15 @@ function seisdos(){
         alert("dragon ball");
     }
 }
+
+function nueve(){
+    var inumero = 35;
+    if (iNumero%2!=0){
+        return true;
+    }else{
+        return false;
+    }
+   
+
+
+}
