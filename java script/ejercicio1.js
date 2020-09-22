@@ -2,27 +2,30 @@ function segundo(){
     alert("¡Hola Mundo 2!");
 }
 
+function pedir(){
     var pedido = prompt("escoje el numero");
-switch (pedido) {
-    case 'uno':
-        alert("has escodigo el 1");
-        break;
-
-    case 'dos':
-        alert("has escodigo el 1");
-       break;
-
-     case 'tres':
-        alert("has escodigo el 1");
-         break;
-
-    case 'cuatro':
-        alert("has escodigo el 1");
-        break;
-
-    default:
-        alert("adios");
-        break;
+    switch (pedido) {
+        case 'uno':
+            alert("has escodigo el 1");
+            break;
+    
+        case 'dos':
+            alert("has escodigo el 1");
+           break;
+    
+         case 'tres':
+            alert("has escodigo el 1");
+             break;
+    
+        case 'cuatro':
+            alert("has escodigo el 1");
+            break;
+    
+        default:
+            alert("adios");
+            break;
+    }
+    
 }
 
 
@@ -53,4 +56,28 @@ function comprobarOperadores(){
     alert(' variable1 < variable2:  ' + variable1 < variable2);
     alert(' variable1 > variable2:  ' + variable1 > variable2);
     alert(' variable1 != variable2: ' + variable1 != variable2);
+}
+
+function ejercicio5(){
+    var dia = prompt("¿Qué día es?");
+    var mes = prompt("¿Qué mes es?");
+    var año = prompt("¿Qué año es?");
+    alert("hoy es el día " + dia + " del mes de " + mes + ", del año " + año);
+
+}
+
+function ejercicio5dos(){
+    var numero1 = prompt("introduce el primer número: ");
+    var numero2 = prompt("introduce el segundo número: ");
+    
+    var resultado = numero1*numero2;
+    alert("la multiplicación de estos es: " + resultado);
+
+    var division = numero1/numero2;
+    alert("la división es: " + division);
+
+    var resta = numero1 - numero2;
+    alert("la resta es: " + resta);
+
+    
 }
