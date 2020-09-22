@@ -116,3 +116,25 @@ function nueve(){
 
 
 }
+
+function diez(){
+try {
+    
+    var num1 = prompt("introduce primer valor");
+    var num2 = prompt("introduce segundo valor");
+
+    var resultado1 = num1 + num2;
+    alert("el resultado de la suma es: " + resultado1);
+
+    var num3 = prompt("introduca otro más");
+    var aument = num3 + resultado1;
+    alert("el resultado de la suma es: " + aument);
+
+} catch (error) {
+    alert("ERROR")
+}
+
+// acaabrlo mas tarde
+
+
+}
