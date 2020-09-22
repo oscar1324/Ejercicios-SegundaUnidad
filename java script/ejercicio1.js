@@ -79,5 +79,28 @@ function ejercicio5dos(){
     var resta = numero1 - numero2;
     alert("la resta es: " + resta);
 
-    
+
+}
+
+function seis(){
+    var array = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto"];
+
+    for(i=0;i< array.length;i++){
+        alert("mes: " + i);
+    }
+
+}
+
+function seisdos(){
+    var edad = prompt("introduce edad");
+
+    if(edad < 7){
+        alert("patrulla canina");
+    }else if(7 < edad > 13){
+        alert("pokemon");
+    }else if(14 < edad < 18){
+        alert("doraimon");
+    }else{
+        alert("dragon ball");
+    }
 }
