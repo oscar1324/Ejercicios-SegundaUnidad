@@ -117,24 +117,59 @@ function nueve(){
 
 }
 
+// esta se crea por qué sera llamada por la otra función, que a su vez
+// cuando haya un error lo muestre por pantalla
+function principal(){
+    try {
+        diez();
+    } catch (error) {
+        console.log("error");
+    }
+}
+// creación de la primera variable. Como la segunda vamos a estar continuamente pidiendola para
+// sumarla haceos uso de do - while lanzando un error por si no es un valor numerico
+
 function diez(){
-try {
+    var num1 = Number(prompt("Introduce el numero: " ));
+    var num2;
+    var r ;
+
+    do{
+       num2 = Number(prompt("introduzca el segundo numero: " ));
+       if(isNaN(num2)){
+            throw new Error("El valor introducido no es numerico");
+       }
+       r = num1 + num2;
+       console.log("el resultado de la suma es: " + r);
+    }while(true);
+}
+
+// acabarlo mas tarde
+
+
+function aaaa(){
+    var precioArticulo= prompt("introduce el precio: ");
+}
+function doce(){
+    function docePrecio(){
+        var precioArticulo= prompt("introduce el precio: ");
+    }
+    function doceIVA(precioArticulo){
+        var letra = prompt("Selecciona el tipo, G,R,S: ");
+        var a,b,c;
     
-    var num1 = prompt("introduce primer valor");
-    var num2 = prompt("introduce segundo valor");
-
-    var resultado1 = num1 + num2;
-    alert("el resultado de la suma es: " + resultado1);
-
-    var num3 = prompt("introduca otro más");
-    var aument = num3 + resultado1;
-    alert("el resultado de la suma es: " + aument);
-
-} catch (error) {
-    alert("ERROR")
+        if(letra == 'G'){
+            alert("I.V.A de tipo general: " +   precioArticulo* 21);
+        }else if(letra == 'R'){
+            alert("I.V.A de tipo reducido: " + precioArticulo* 10);
+        } else if(letra == 'S'){
+            alert("I.V.A de tipo superreducido: " + precioArticulo* 4);
+        } else{
+            alert("Error al introducir la letra")
+        }
+    }
+    
 }
 
-// acaabrlo mas tarde
 
 
-}
