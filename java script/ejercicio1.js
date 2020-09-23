@@ -187,5 +187,45 @@ function doceIVA(precioArticulo){
     return resultado;
 }
 
+function trece(){
+    var num1 = prompt("introduce numero 1: " );
+    var num2 = prompt("introduce numero 2: ");
+    var re = num1 * num2;
+    console.log("resultado: " + re )
+}
+
+function treceb(){
+    var usuario = prompt("introduce usuario: " );
+    
+
+    do{
+        var contraseña = prompt("introduce contraseña: " );
+        if(contraseña != 'abc'){
+            alert("siga intentandolo")
+        }else{
+            alert("correcto");
+        }
+        alert("Usuario: " + usuario + "\nContraseña: " + contrasena);
+        
+    }while(true)
+}
+
+function trecec(){
+    var numFilas = Number(prompt("introduce numero 1: " ));
+    var numColumnas = Number(prompt("introduce numero 2: "));
+    var letra = prompt("introduce letra: ");
+    var rrrr = " ";
+
+    while(numeroFilas > 0){
+        let columnas = Ncolumnas;
+        while(columnas > 0){
+            rrrr = rrrr + letra;
+            columna--;
+        }
+        rrrr = rrrr + "\n";
+        numeroFilas--;
+    }
+    alert(rrrr);
+}
 
 
