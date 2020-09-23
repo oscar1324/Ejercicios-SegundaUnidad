@@ -147,28 +147,44 @@ function diez(){
 // acabarlo mas tarde
 
 
-function aaaa(){
-    var precioArticulo= prompt("introduce el precio: ");
-}
-function doce(){
-    function docePrecio(){
-        var precioArticulo= prompt("introduce el precio: ");
-    }
-    function doceIVA(precioArticulo){
-        var letra = prompt("Selecciona el tipo, G,R,S: ");
-        var a,b,c;
-    
-        if(letra == 'G'){
-            alert("I.V.A de tipo general: " +   precioArticulo* 21);
-        }else if(letra == 'R'){
-            alert("I.V.A de tipo reducido: " + precioArticulo* 10);
-        } else if(letra == 'S'){
-            alert("I.V.A de tipo superreducido: " + precioArticulo* 4);
+function pagar(){
+
+        var precioArticulo= parseInt(prompt("introduce el precio: "));
+        var tipoIva = prompt("Selecciona el tipo, G,R,S: ");
+        if(typeof precioArticulo == 'number' && tipoIva == 'string'){
+            // la función doceIva recibe como parametros de entrada el precio
+            // además de el tipo de iva para que se realice la función
+            alert("El precio final es: " + doceIVA(precioArticulo,tipoIva))
         } else{
-            alert("Error al introducir la letra")
+            alert("Error al introducirse los datos");
         }
-    }
     
+   
+    
+}
+
+function doceIVA(precioArticulo){
+    var resultado = 0;
+    console.log("precio: " + precioArticulo);
+    console.log("Tipo de IVA: " + tipoIva);
+
+    switch (tipoIva) {
+        case 'G': resultado = precioArticulo*1.21;
+            
+            break;
+        case 'R': resultado = precioArticulo*1.10;
+            
+             break;
+        case 'S': resultado = precioArticulo* 1.04;
+            
+             break;
+                
+        default:
+            alert("Error al introducir los datos.")
+            break;
+    }
+    console.log("final: " + resultado);
+    return resultado;
 }
 
 
