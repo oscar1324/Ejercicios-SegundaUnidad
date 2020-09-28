@@ -2,11 +2,7 @@ function segundo(){
     alert("¡Hola Mundo 2!");
 }
 
-
-function pro(){
-
-}
-function pro2(){
+function proooo(){
     
 }
 
@@ -279,4 +275,5 @@ function concatenarDeportes(){
     }
     alert(resultado);
 }
+
 
