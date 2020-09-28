@@ -2,6 +2,11 @@ function segundo(){
     alert("¡Hola Mundo 2!");
 }
 
+
+function pro(){
+    
+}
+
 function pedir(){
     var pedido = prompt("escoje el numero");
     switch (pedido) {
@@ -271,5 +276,4 @@ function concatenarDeportes(){
     }
     alert(resultado);
 }
-
 
